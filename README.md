@@ -3,18 +3,22 @@ Repository containing my codes used to train, validate, and infer choroid plexus
 
 ## Data structure expected for preprocessing code to create the Torchio subjects to train faster
 ```bash
-├── S01
-│   └── V01
-│       ├── S01_V01_flair.nii.gz
-│       └── S01_V01_mask.nii.gz
-├── S02
-│   └── V01
-│       ├── S02_V01_flair.nii.gz
-│       └── S02_V01_mask.nii.gz
-├── S03
-│   └── V01
-│       ├── S03_V01_flair.nii.gz
-│       └── S03_V01_mask.nii.gz
+root
+├── data
+│ ├── train_subject_infos.csv
+│ ├── S01
+│ │   └── V01
+│ │       ├── S01_V01_flair.nii.gz
+│ │       └── S01_V01_mask.nii.gz
+│ ├── S02
+│ │   └── V01
+│ │       ├── S02_V01_flair.nii.gz
+│ │       └── S02_V01_mask.nii.gz
+│ ├── ...
+├── train_tio_subjects (created by preprocessing code)
+│ ├── S01-V01.tio
+│ ├── S02-V01.tio
+│ ├── ...
 ```
 
 ## Citing us
