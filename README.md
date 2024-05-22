@@ -38,7 +38,6 @@ root
  S01         | V01       | 0               
  S02         | V01       | 1               
  S02         | V02       | 1               
-### Creating folds for cross-validation
 
 ## Citing us
 Yazdan-Panah A, Schmidt-Mengin M, Ricigliano VAG, Soulier T, Stankoff B, Colliot O. *Automatic segmentation of the choroid plexuses: Method and validation in controls and patients with multiple sclerosis.* Neuroimage Clin. 2023
