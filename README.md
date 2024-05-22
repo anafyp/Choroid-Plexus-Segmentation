@@ -8,11 +8,11 @@ root
 │ ├── train_subject_infos.csv
 │ ├── S01
 │ │   └── V01
-│ │       ├── S01_V01_flair.nii.gz
+│ │       ├── S01_V01_image.nii.gz
 │ │       └── S01_V01_mask.nii.gz
 │ ├── S02
 │ │   └── V01
-│ │       ├── S02_V01_flair.nii.gz
+│ │       ├── S02_V01_image.nii.gz
 │ │       └── S02_V01_mask.nii.gz
 │ ├── ...
 ├── data_tensor (created by preprocessing code *create_torchio_dataset_from_nifti.py*)
