@@ -4,7 +4,7 @@ Repository containing my codes used to train, validate, and infer choroid plexus
 ## Data structure expected for preprocessing code to create the Torchio subjects to train faster
 ```bash
 root
-├── data
+├── data_nifti
 │ ├── train_subject_infos.csv
 │ ├── S01
 │ │   └── V01
@@ -15,7 +15,7 @@ root
 │ │       ├── S02_V01_flair.nii.gz
 │ │       └── S02_V01_mask.nii.gz
 │ ├── ...
-├── train_tio_subjects (created by preprocessing code)
+├── data_tensor (created by preprocessing code *create_torchio_dataset_from_nifti.py*)
 │ ├── S01-V01.tio
 │ ├── S02-V01.tio
 │ ├── ...
