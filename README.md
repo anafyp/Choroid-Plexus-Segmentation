@@ -5,7 +5,7 @@ Repository containing my scripts used to train, validate, and infer choroid plex
 ```bash
 root
 ├── data_nifti
-│ ├── train_subject_infos.csv
+│ ├── subjects_infos.csv
 │ ├── S01
 │ │   └── V01
 │ │       ├── S01_V01_image.nii.gz
@@ -18,8 +18,16 @@ root
 │ │       ├── S02_V02_image.nii.gz
 │ │       └── S02_V02_mask.nii.gz
 │ ├── ...
-├── data_tensor (created by preprocessing code *create_torchio_dataset_from_nifti.py*)
+├── data_torch (created by preprocessing code *create_torchio_dataset_from_nifti.py*)
 │ ├── S01-V01.tio
+│ ├── S02-V01.tio
+│ ├── S02-V02.tio
+│ ├── ...
+├── test_torch (created by preprocessing code *stratify_train_test_val.py*)
+│ ├── S01-V01.tio
+│ ├── ...
+├── train_torch (created by preprocessing code *stratify_train_test_val.py*)
+│ ├── folds.pickle
 │ ├── S02-V01.tio
 │ ├── S02-V02.tio
 │ ├── ...
@@ -30,6 +38,7 @@ root
  S01         | V01       | 0               
  S02         | V01       | 1               
  S02         | V02       | 1               
+### Creating folds for cross-validation
 
 ## Citing us
 Yazdan-Panah A, Schmidt-Mengin M, Ricigliano VAG, Soulier T, Stankoff B, Colliot O. *Automatic segmentation of the choroid plexuses: Method and validation in controls and patients with multiple sclerosis.* Neuroimage Clin. 2023
